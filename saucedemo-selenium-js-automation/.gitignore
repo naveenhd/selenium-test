@@ -1,0 +1,7 @@
+node_modules/
+reports/
+screenshots/
+mochawesome-report/
+.env
+.DS_Store
+npm-debug.log*

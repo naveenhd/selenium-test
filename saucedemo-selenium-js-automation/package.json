@@ -1,0 +1,27 @@
+{
+  "name": "saucedemo-selenium-js-automation",
+  "version": "1.0.0",
+  "description": "End-to-end web test automation for saucedemo.com using Selenium WebDriver, JavaScript, Mocha and the Page Object Model",
+  "scripts": {
+    "test": "mocha",
+    "test:headless": "HEADLESS=true mocha",
+    "test:report": "HEADLESS=true mocha --reporter mochawesome --reporter-options reportDir=reports,reportFilename=report,overwrite=true",
+    "test:login": "mocha tests/login.test.js",
+    "test:inventory": "mocha tests/inventory.test.js",
+    "test:cart": "mocha tests/cart.test.js",
+    "test:checkout": "mocha tests/checkout.test.js"
+  },
+  "keywords": ["selenium", "webdriver", "javascript", "mocha", "chai", "test-automation", "page-object-model", "qa"],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "selenium-webdriver": "^4.25.0"
+  },
+  "devDependencies": {
+    "chai": "^4.4.1",
+    "mocha": "^10.7.3",
+    "mochawesome": "^7.1.3"
+  }
+}
